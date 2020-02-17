@@ -7,24 +7,28 @@ const AppNavbar = (props) => {
     const [collapsed, setCollapsed] = useState(true);
 
     const toggleNavbar = () => setCollapsed(!collapsed);
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggle = () => setIsOpen(!isOpen);
 
     return (
         <div>
-            <Navbar color="faded" light>
-                <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
-                <NavbarToggler onClick={toggleNavbar} className="mr-2" />
-                <Collapse isOpen={!collapsed} navbar>
-                    <Nav navbar>
-                        <NavItem>
+            <Navbar color="light" light expand="md">
+                <NavbarBrand href="/">reactstrap</NavbarBrand>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav navbar className='nav-items-container'>
+                        <NavItem className='custom-nav-item'>
                             <NavLink to="/">Home</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='custom-nav-item'>
                             <NavLink to="/movies">Movies</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='custom-nav-item'>
                             <NavLink to="/tv-shows">Tv Shows</NavLink>
                         </NavItem>
-                        <NavItem>
+                        <NavItem className='pusher-nav-item'/>
+                        <NavItem className='custom-nav-item search-bar-item'>
                             <SearchBar/>
                         </NavItem>
                     </Nav>

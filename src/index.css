@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*APP NAVBAR*/
+.nav-items-container{
+  width: 100%;
+}
+
+.custom-nav-item{
+  margin: 5px 15px;
+}
+
+.pusher-nav-item{
+  flex-basis: 55%;
+}

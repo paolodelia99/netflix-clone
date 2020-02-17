@@ -6,18 +6,23 @@ import HomePage from "./components/DashBoard/HomePage";
 import MoviesPage from "./components/DashBoard/MoviesPage";
 import TvShowsPage from "./components/DashBoard/TvShowsPage";
 
+import {Provider} from 'react-redux';
+import store from "./store";
+
 function App() {
   return (
-      <Routes>
-        <Fragment>
-          <AppNavbar/>
-          <Switch>
-            <Route exact path='/' component={HomePage}/>
-            <Route exact path='/movies' component={MoviesPage}/>
-            <Route exact path='/tv-shows' component={TvShowsPage}/>
-          </Switch>
-        </Fragment>
-      </Routes>
+      <Provider store={store}>
+          <Routes>
+              <Fragment>
+                  <AppNavbar/>
+                  <Switch>
+                      <Route exact path='/' component={HomePage}/>
+                      <Route exact path='/movies' component={MoviesPage}/>
+                      <Route exact path='/tv-shows' component={TvShowsPage}/>
+                  </Switch>
+              </Fragment>
+          </Routes>
+      </Provider>
   );
 }
 
