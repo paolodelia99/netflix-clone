@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import {getAllMovies} from "../../actions/movies";
 import {getTrendings} from "../../actions/trendings";
 import {getAllTvShows} from "../../actions/tvShows";
-
+//Other components imports
 import {Col, Row} from "reactstrap";
 import ItemSlider from "../ItemsSlider";
 
@@ -31,36 +31,9 @@ const HomePage =
 
     },[]);
 
-    let trendingItemList = trendingList.map(trendItem => (
-        <div className="card bg-dark text-white item" key={trendItem.id}>
-            <img src={`https://image.tmdb.org/t/p/w154${trendItem.posterPath}`} className="card-img" alt="..." />
-                <div className="card-img-overlay">
-                    <h5 className="card-title">{trendItem.title}</h5>
-                </div>
-        </div>
-    ));
-/*
-    const popularMoviesList = movies.popularMovies && !movies.arePopularLoading ? movies.popularMovies.map(movie => (
-        <div className="card bg-dark text-white item">
-            <img src={`https://image.tmdb.org/t/p/w154${movie.posterPath}`} className="card-img" alt="..." />
-            <div className="card-img-overlay">
-                <h5 className="card-title">{movie.title}</h5>
-            </div>
-        </div>
-    )) : null;
-
-    const popularTvShowsList = tvShows.popularTvShows && !tvShows.arePopularLoading ? tvShows.popularTvShows.map(tvShow => (
-        <div className="card bg-dark text-white item">
-            <img src={`https://image.tmdb.org/t/p/w154${tvShow.posterPath}`} className="card-img" alt="..." />
-            <div className="card-img-overlay">
-                <h5 className="card-title">{tvShow.name}</h5>
-            </div>
-        </div>
-    )) : null
-*/
     return (
         <div className='home-page-container'>
-            <Row className='slider-big-wrapper'>
+            <Row className='category-wrapper first-category-wrapper'>
                 <div className='title-container'>
                     <header>
                         <h3>Trending Now</h3>
@@ -70,7 +43,7 @@ const HomePage =
                     {trendingList.length ? <ItemSlider children={trendingList} type={'trending'}/> : <p>nothhing to show here</p>}
                 </Col>
             </Row>
-            <Row className='slider-big-wrapper'>
+            <Row className='category-wrapper'>
                 <div className='title-container'>
                     <header>
                         <h3>Popular Movies</h3>
@@ -82,7 +55,7 @@ const HomePage =
                     : <p>nothing to show here</p>}
                 </Col>
             </Row>
-            <Row className='slider-big-wrapper'>
+            <Row className='category-wrapper'>
                 <div className='title-container'>
                     <header>
                         <h3>Popular Tv Shows</h3>

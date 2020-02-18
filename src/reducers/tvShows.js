@@ -8,11 +8,11 @@ import {
 const initalState = {
     popularTvShows: [],
     arePopularLoading: true,
-    topRatedTvShows: null,
+    topRatedTvShows: [],
     areTopRatedLoading: true,
-    airingTodayTvShows: null,
+    airingTodayTvShows: [],
     areAiringTodayLoading: true,
-    onAirTvShows: null,
+    onAirTvShows: [],
     areOnAirLoading: true
 };
 
@@ -43,7 +43,7 @@ export default function (state=initalState,action) {
                 ...state,
                 popularTvShows: payload,
                 arePopularLoading: false
-            }
+            };
         default:
             return state;
     }

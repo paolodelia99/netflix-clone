@@ -33,9 +33,13 @@ code {
   justify-content: space-around;
 }
 
-.slider-big-wrapper{
+.category-wrapper{
   padding: 10px;
   margin: 125px 20px;
+}
+
+.first-category-wrapper{
+  margin-top: 50px;
 }
 
 .title-container{
@@ -48,8 +52,4 @@ code {
 
 .slider-wrapper{
   height: 400px;
-}
-
-.item{
-  height: 185px;
 }

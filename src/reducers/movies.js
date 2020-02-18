@@ -8,9 +8,9 @@ import {
 const initialState = {
     popularMovies: [],
     arePopularLoading: true,
-    nowPlayingMovies: null,
-    topRatedMovies: null,
-    upComingMovies: null
+    nowPlayingMovies: [],
+    topRatedMovies: [],
+    upComingMovies: []
 };
 
 export default function (state=initialState, action) {

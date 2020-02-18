@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae72b6b1-2b34-410d-a48e-caebcef1afd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Items/MovieItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Items/TrendingItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Items/TvShowItem.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ItemsSlider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/trendings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/trendings.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/tvShows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/tvShows.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DashBoard/MoviesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/MoviesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DashBoard/TvShowsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/TvShowsPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/trending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/trending.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/tvShows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/tvShows.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +74,7 @@
       <workItem from="1581933027246" duration="5637000" />
       <workItem from="1581945623133" duration="30000" />
       <workItem from="1581967924133" duration="8193000" />
-      <workItem from="1582011273729" duration="10472000" />
+      <workItem from="1582011273729" duration="12665000" />
     </task>
     <servers />
   </component>
