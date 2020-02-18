@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae72b6b1-2b34-410d-a48e-caebcef1afd5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actions/searchResult.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SearchPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/searchResult.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/film-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/film-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/MoviesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/MoviesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/TvShowsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/TvShowsPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/MovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/MovieItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/TrendingItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/TrendingItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Items/TvShowItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/TvShowItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemsSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsSlider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/AppNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/AppNavbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Layout/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/SearchBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +92,7 @@
       <workItem from="1581945623133" duration="30000" />
       <workItem from="1581967924133" duration="8193000" />
       <workItem from="1582011273729" duration="12665000" />
+      <workItem from="1582055884114" duration="7494000" />
     </task>
     <servers />
   </component>
@@ -86,25 +104,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582015821722" />
-    <state width="1899" height="260" key="GridCell.Tab.0.bottom" timestamp="1582031165367">
+    <state width="1899" height="260" key="GridCell.Tab.0.bottom" timestamp="1582034026940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581977060300" />
-    <state width="1899" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582031165367" />
-    <state width="1899" height="260" key="GridCell.Tab.0.center" timestamp="1582031165367">
+    <state width="1899" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1582034026940" />
+    <state width="1899" height="260" key="GridCell.Tab.0.center" timestamp="1582034026940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581977060298" />
-    <state width="1899" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582031165367" />
-    <state width="1899" height="260" key="GridCell.Tab.0.left" timestamp="1582031165366">
+    <state width="1899" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1582034026940" />
+    <state width="1899" height="260" key="GridCell.Tab.0.left" timestamp="1582034026939">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581977060298" />
-    <state width="1899" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582031165366" />
-    <state width="1899" height="260" key="GridCell.Tab.0.right" timestamp="1582031165367">
+    <state width="1899" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1582034026939" />
+    <state width="1899" height="260" key="GridCell.Tab.0.right" timestamp="1582034026940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581977060299" />
-    <state width="1899" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582031165367" />
+    <state width="1899" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1582034026940" />
   </component>
 </project>

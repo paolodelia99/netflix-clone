@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {getAllMovies} from "../../actions/movies";
 
-import {Col, Row} from "reactstrap";
+import {Col, Row, Spinner} from "reactstrap";
 import ItemSlider from "../ItemsSlider";
 
 
@@ -39,7 +39,7 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {popularMovies.length ? <ItemSlider children={popularMovies} type={'movies'}/> : <p>nothhing to show here</p>}
+                    {popularMovies.length ? <ItemSlider children={popularMovies} type={'movies'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -49,17 +49,17 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {nowPlayingMovies.length ? <ItemSlider children={nowPlayingMovies} type={'movies'}/> : <p>nothhing to show here</p>}
+                    {nowPlayingMovies.length ? <ItemSlider children={nowPlayingMovies} type={'movies'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
                 <div className='title-container'>
                     <header>
-                        <h3>Airing Today TV Shows</h3>
+                        <h3>Top Rated</h3>
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {topRatedMovies.length ? <ItemSlider children={topRatedMovies} type={'movies'}/> : <p>nothhing to show here</p>}
+                    {topRatedMovies.length ? <ItemSlider children={topRatedMovies} type={'movies'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -69,7 +69,7 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {upComingMovies.length ? <ItemSlider children={upComingMovies} type={'movies'}/> : <p>nothhing to show here</p>}
+                    {upComingMovies.length ? <ItemSlider children={upComingMovies} type={'movies'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
         </div>

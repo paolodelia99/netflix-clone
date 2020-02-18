@@ -43,6 +43,7 @@ class ItemSlider extends Component {
                 classes={{
                     wrapper: 'customs-slider-big-wrapper',
                     itemsWrapper: 'slider-wrapper',
+                    itemWrapper: 'custom-item-wrapper',
                     itemsInnerWrapper: 'custom-inner-items-wrapper',
                     rightChevronWrapper: 'right-chevron-wrapper',
                     leftChevronWrapper: 'left-chevron-wrapper'

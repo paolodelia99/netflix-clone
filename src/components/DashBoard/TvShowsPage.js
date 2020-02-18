@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {getAllTvShows} from "../../actions/tvShows";
 
-import {Col, Row} from "reactstrap";
+import {Col, Row, Spinner} from "reactstrap";
 import ItemSlider from "../ItemsSlider";
 
 const TvShowsPage = (
@@ -42,7 +42,7 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {popularTvShows.length ? <ItemSlider children={popularTvShows} type={'tvShows'}/> : <p>nothhing to show here</p>}
+                    {popularTvShows.length ? <ItemSlider children={popularTvShows} type={'tvShows'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -52,19 +52,19 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {topRatedTvShows.length ? <ItemSlider children={topRatedTvShows} type={'tvShows'}/> : <p>nothhing to show here</p>}
+                    {topRatedTvShows.length ? <ItemSlider children={topRatedTvShows} type={'tvShows'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
-            <Row className='category-wrapper'>
+           {airingTodayTvShows.length ? <Row className='category-wrapper'>
                 <div className='title-container'>
                     <header>
                         <h3>Airing Today TV Shows</h3>
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {airingTodayTvShows.length ? <ItemSlider children={airingTodayTvShows} type={'tvShows'}/> : <p>nothhing to show here</p>}
+                    {airingTodayTvShows.length ? <ItemSlider children={airingTodayTvShows} type={'tvShows'}/> : null}
                 </Col>
-            </Row>
+            </Row> : null}
             <Row className='category-wrapper'>
                 <div className='title-container'>
                     <header>
@@ -72,7 +72,7 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {onAirTvShows.length ? <ItemSlider children={onAirTvShows} type={'tvShows'}/> : <p>nothhing to show here</p>}
+                    {onAirTvShows.length ? <ItemSlider children={onAirTvShows} type={'tvShows'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
         </div>

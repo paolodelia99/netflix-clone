@@ -4,9 +4,6 @@ import {NavLink} from 'react-router-dom'
 import SearchBar from "./SearchBar";
 
 const AppNavbar = (props) => {
-    const [collapsed, setCollapsed] = useState(true);
-
-    const toggleNavbar = () => setCollapsed(!collapsed);
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -19,13 +16,13 @@ const AppNavbar = (props) => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav navbar className='nav-items-container custom-nav-bar' >
                         <NavItem className='custom-nav-item'>
-                            <NavLink to="/" className='nav-link-text'>Home</NavLink>
+                            <NavLink exact to="/" className='nav-link-text'  activeStyle={{fontWeight: "bold"}} >Home</NavLink>
                         </NavItem>
                         <NavItem className='custom-nav-item'>
-                            <NavLink to="/movies" className='nav-link-text'>Movies</NavLink>
+                            <NavLink to="/movies" className='nav-link-text' activeStyle={{fontWeight: "bold"}} >Movies</NavLink>
                         </NavItem>
                         <NavItem className='custom-nav-item'>
-                            <NavLink to="/tv-shows" className='nav-link-text'>Tv Shows</NavLink>
+                            <NavLink to="/tv-shows" className='nav-link-text' activeStyle={{fontWeight: "bold"}} >Tv Shows</NavLink>
                         </NavItem>
                         <NavItem className='pusher-nav-item'/>
                         <NavItem className='custom-nav-item search-bar-item'>

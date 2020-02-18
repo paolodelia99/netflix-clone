@@ -6,7 +6,7 @@ import {getAllMovies} from "../../actions/movies";
 import {getTrendings} from "../../actions/trendings";
 import {getAllTvShows} from "../../actions/tvShows";
 //Other components imports
-import {Col, Row} from "reactstrap";
+import {Col, Row, Spinner} from "reactstrap";
 import ItemSlider from "../ItemsSlider";
 
 const HomePage =
@@ -40,7 +40,7 @@ const HomePage =
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {trendingList.length ? <ItemSlider children={trendingList} type={'trending'}/> : <p>nothhing to show here</p>}
+                    {trendingList.length ? <ItemSlider children={trendingList} type={'trending'}/> : <Spinner color="danger" />}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -52,7 +52,7 @@ const HomePage =
                 <Col className='slider-container'>
                     {popularMovies ?
                   <ItemSlider children={popularMovies} type={'movies'}/>
-                    : <p>nothing to show here</p>}
+                    : <Spinner color="danger" />}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -64,7 +64,7 @@ const HomePage =
                 <Col className='slider-container'>
                     {popularTvShows ?
                     <ItemSlider children={popularTvShows} type={'tvShows'}/>
-                    : <p>nogtignsf</p>}
+                    : <Spinner color="danger" />}
                 </Col>
             </Row>
         </div>

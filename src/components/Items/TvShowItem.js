@@ -5,7 +5,7 @@ const TvShowItem = ({tvShowItem}) => {
     return (
         <div>
             <div className="card bg-dark text-white item">
-                <img src={`https://image.tmdb.org/t/p/w154${tvShowItem.posterPath}`} className="card-img" alt="..." />
+                <img src={`https://image.tmdb.org/t/p/w500${tvShowItem.posterPath}`} className="card-img" alt="..." />
             </div>
         </div>
     );

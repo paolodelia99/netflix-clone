@@ -88,6 +88,5 @@ const getMoviesData = (keyword) => async dispatch => {
     }catch (e) {
         //fixme: handle error in a proper way
         console.log('Server error')
-
     }
 };
