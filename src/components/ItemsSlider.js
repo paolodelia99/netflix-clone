@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import ItemsCarousel from 'react-items-carousel';
-import range from 'lodash/range';
 import TrendingItem from "./Items/TrendingItem";
 
 import PropTypes from 'prop-types';
@@ -41,7 +40,13 @@ class ItemSlider extends Component {
 
         return (
             <ItemsCarousel
-                classes={{itemsWrapper: 'slider-wrapper'}}
+                classes={{
+                    wrapper: 'customs-slider-big-wrapper',
+                    itemsWrapper: 'slider-wrapper',
+                    itemsInnerWrapper: 'custom-inner-items-wrapper',
+                    rightChevronWrapper: 'right-chevron-wrapper',
+                    leftChevronWrapper: 'left-chevron-wrapper'
+                }}
                 // Carousel configurations
                 numberOfCards={5}
                 gutter={12}

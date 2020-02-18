@@ -34,7 +34,7 @@ const TvShowsPage = (
     },[]);
 
     return (
-        <div>
+        <div className='page-container'>
             <Row className='category-wrapper first-category-wrapper'>
                 <div className='title-container'>
                     <header>
