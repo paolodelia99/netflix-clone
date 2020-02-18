@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae72b6b1-2b34-410d-a48e-caebcef1afd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/actions/movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/trendings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/tvShows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/movies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/trending.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/tvShows.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Items/MovieItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Items/TrendingItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Items/TvShowItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemsSlider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/trendings.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/trendings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/tvShows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/tvShows.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/AppNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/AppNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Routes/Routes.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/movies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/trending.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/trending.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/tvShows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/tvShows.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/devconnector_2.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/GKeep" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,7 +81,8 @@
       <updated>1581933024443</updated>
       <workItem from="1581933027246" duration="5637000" />
       <workItem from="1581945623133" duration="30000" />
-      <workItem from="1581967924133" duration="7931000" />
+      <workItem from="1581967924133" duration="8193000" />
+      <workItem from="1582011273729" duration="10472000" />
     </task>
     <servers />
   </component>
@@ -91,29 +90,29 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1581976358709">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1582015821722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1581976358709" />
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1581968158727">
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582015821722" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom" timestamp="1581977060300">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581968158727" />
+    <state width="1515" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1581977060300" />
     <state width="936" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581942809910" />
-    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1581968158726">
+    <state width="1515" height="210" key="GridCell.Tab.0.center" timestamp="1581977060298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581968158726" />
+    <state width="1515" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1581977060298" />
     <state width="936" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581942809910" />
-    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1581968158725">
+    <state width="1515" height="210" key="GridCell.Tab.0.left" timestamp="1581977060298">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581968158725" />
+    <state width="1515" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1581977060298" />
     <state width="936" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581942809909" />
-    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1581968158726">
+    <state width="1515" height="210" key="GridCell.Tab.0.right" timestamp="1581977060299">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581968158726" />
+    <state width="1515" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1581977060299" />
     <state width="936" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581942809910" />
   </component>
 </project>

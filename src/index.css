@@ -24,3 +24,32 @@ code {
 .pusher-nav-item{
   flex-basis: 55%;
 }
+
+/*HOME PAGE*/
+.items-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.slider-big-wrapper{
+  padding: 10px;
+  margin: 125px 20px;
+}
+
+.title-container{
+  margin: 15px 20px;
+}
+
+.slider-container{
+  height: 250px;
+}
+
+.slider-wrapper{
+  height: 400px;
+}
+
+.item{
+  height: 185px;
+}

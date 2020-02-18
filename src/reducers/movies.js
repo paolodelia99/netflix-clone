@@ -6,7 +6,8 @@ import {
 } from "../actions/types";
 
 const initialState = {
-    popularMovies: null,
+    popularMovies: [],
+    arePopularLoading: true,
     nowPlayingMovies: null,
     topRatedMovies: null,
     upComingMovies: null

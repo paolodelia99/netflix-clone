@@ -6,10 +6,14 @@ import {
 } from "../actions/types";
 
 const initalState = {
-    popularTvShows: null,
+    popularTvShows: [],
+    arePopularLoading: true,
     topRatedTvShows: null,
+    areTopRatedLoading: true,
     airingTodayTvShows: null,
-    onAirTvShows: null
+    areAiringTodayLoading: true,
+    onAirTvShows: null,
+    areOnAirLoading: true
 };
 
 export default function (state=initalState,action) {
@@ -19,22 +23,26 @@ export default function (state=initalState,action) {
         case GET_TV_ON_AIR:
             return{
                 ...state,
-                onAirTvShows: payload
+                onAirTvShows: payload,
+                areOnAirLoading: false
             };
         case GET_TV_AIRING_TODAY:
             return {
                 ...state,
-                airingTodayTvShows: payload
+                airingTodayTvShows: payload,
+                areAiringTodayLoading: false
             };
         case GET_TOP_RATED_TV_SHOWS:
             return {
                 ...state,
-                topRatedTvShows: payload
+                topRatedTvShows: payload,
+                areTopRatedLoading: false
             };
         case GET_POPULAR_TV_SHOWS:
             return {
                 ...state,
-                popularTvShows: payload
+                popularTvShows: payload,
+                arePopularLoading: false
             }
         default:
             return state;

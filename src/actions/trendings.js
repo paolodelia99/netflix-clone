@@ -18,6 +18,7 @@ export const getTrendings = () => async dispatch => {
             trendingItem.popularity = data['results'][key]['popularity']
             trendingItem.voteAverage = data['results'][key]['vote_average']
             trendingItem.voteCount = data['results'][key]['vote_count']
+            trendingItem.posterPath = data['results'][key]['poster_path']
             trendingItem.releaseDate = data['results'][key]['release_date']
             trendingItem.mediaType = data['results'][key]['media_type']
 
@@ -30,6 +31,7 @@ export const getTrendings = () => async dispatch => {
         })
 
     }catch (e) {
-
+        //fixme: handle error in a proper way
+        console.log('Server error')
     }
 }

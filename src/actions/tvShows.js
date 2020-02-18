@@ -39,12 +39,13 @@ const getTvShowsData = (keyword) => async dispatch => {
         for(let key in data['results']){
             let tvShowItem = {}
 
-            tvShowItem.title = data['results'][key]['title']
+            tvShowItem.name = data['results'][key]['name'];
+            tvShowItem.posterPath = data['results'][key]['poster_path']
             tvShowItem.id = data['results'][key]['id']
             tvShowItem.overview = data['results'][key]['overview']
             tvShowItem.popularity = data['results'][key]['popularity']
             tvShowItem.voteCount = data['results'][key]['vote_count']
-            tvShowItem.releaseDate = data['results'][key]['release_date']
+            tvShowItem.firstAirDate = data['results'][key]['first_air_date']
 
             tvShowsList.push(tvShowItem)
         }

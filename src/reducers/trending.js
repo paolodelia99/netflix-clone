@@ -1,7 +1,8 @@
 import {GET_TRENDINGS} from "../actions/types";
 
 const initialState = {
-    trendingList: null
+    trendingList: [],
+    isLoading: true
 };
 
 export default function (state=initialState,action) {
@@ -10,7 +11,8 @@ export default function (state=initialState,action) {
     if(type === GET_TRENDINGS){
         return {
             ...state,
-            trendingList: payload
+            trendingList: payload,
+            isLoading: false
         }
     }else{
         return state
