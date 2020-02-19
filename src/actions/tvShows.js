@@ -44,6 +44,7 @@ const getTvShowsData = (keyword) => async dispatch => {
             tvShowItem.id = data['results'][key]['id']
             tvShowItem.overview = data['results'][key]['overview']
             tvShowItem.popularity = data['results'][key]['popularity']
+            tvShowItem.voteAverage = data['results'][key]['vote_average']
             tvShowItem.voteCount = data['results'][key]['vote_count']
             tvShowItem.firstAirDate = data['results'][key]['first_air_date']
 

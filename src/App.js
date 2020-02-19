@@ -10,6 +10,7 @@ import SearchPage from "./components/SearchPage";
 import {Provider} from 'react-redux';
 import store from "./store";
 import MovieDetail from "./components/ItemDetail/MovieDetail";
+import TvShowDetail from "./components/ItemDetail/TvShowDetail";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                       <Route exact path='/tv-shows' component={TvShowsPage}/>
                       <Route exact path='/search/:keyword' component={SearchPage}/>
                       <Route exact path='/movie/:movie_name' component={MovieDetail}/>
+                      <Route exact path='/tv-show/:tv_show_name' component={TvShowDetail}/>
                   </Switch>
               </Fragment>
           </Routes>

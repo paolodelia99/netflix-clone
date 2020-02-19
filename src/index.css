@@ -82,15 +82,56 @@ code {
   align-items: flex-start;
 }
 
+.search-title-container{
+  margin: 20px 10px;
+  padding: 10px;
+}
+
 .searched-item{
     flex-basis: 18%!important;
     margin: 15px 5px;
+}
+
+/*MOVIE DETAILS*/
+.page-detail-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.current-movie-title{
+  color: #B9090B;
+  font-size: 70px!important;
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.current-movie-img-container{
+  margin: 20px;
+}
+
+.movie-item-info-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px 10px;
+  padding: 10px;
 }
 
 /*HOME PAGE*/
 .page-container{
   background: rgba(0,0,0,0.87);
   color: #B9090B;
+}
+
+.detail-info-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .items-container{

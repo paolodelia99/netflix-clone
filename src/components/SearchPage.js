@@ -31,7 +31,7 @@ const SearchPage = (
             {
                 searchedMovies.length && !areMoviesLoading ?
                     <div className='result-big-wrapper'>
-                        <div>
+                        <div className='search-title-container'>
                             <header>
                                 <h3 className='netflix-text-color'>Movies</h3>
                             </header>
@@ -44,7 +44,7 @@ const SearchPage = (
             {
                 searchedTvShows.length && !areTvShowsLoading ?
                 <div className="result-big-wrapper">
-                    <div>
+                    <div className='search-title-container'>
                         <header>
                             <h3 className='netflix-text-color'>Tv Shows</h3>
                         </header>
