@@ -6,6 +6,8 @@ import {getAllTvShows} from "../../actions/tvShows";
 
 import {Col, Row, Spinner} from "reactstrap";
 import ItemSlider from "../ItemsSlider";
+import LoadingPage from "../Layout/LoadingPage";
+import {Animated} from "react-animated-css";
 
 const TvShowsPage = (
     {
@@ -42,7 +44,14 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {popularTvShows.length ? <ItemSlider children={popularTvShows} type={'tvShows'}/> : <Spinner color="danger" />}
+                    {
+                        popularTvShows.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={popularTvShows} type={'tvShows'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -52,7 +61,14 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {topRatedTvShows.length ? <ItemSlider children={topRatedTvShows} type={'tvShows'}/> : <Spinner color="danger" />}
+                    {
+                        topRatedTvShows.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={topRatedTvShows} type={'tvShows'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
            {airingTodayTvShows.length ? <Row className='category-wrapper'>
@@ -62,7 +78,14 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {airingTodayTvShows.length ? <ItemSlider children={airingTodayTvShows} type={'tvShows'}/> : null}
+                    {
+                        airingTodayTvShows.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={airingTodayTvShows} type={'tvShows'}/>
+                            </Animated>
+                            :
+                            null
+                    }
                 </Col>
             </Row> : null}
             <Row className='category-wrapper'>
@@ -72,7 +95,14 @@ const TvShowsPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {onAirTvShows.length ? <ItemSlider children={onAirTvShows} type={'tvShows'}/> : <Spinner color="danger" />}
+                    {
+                        onAirTvShows.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={onAirTvShows} type={'tvShows'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
         </div>

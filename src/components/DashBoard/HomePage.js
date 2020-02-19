@@ -8,6 +8,8 @@ import {getAllTvShows} from "../../actions/tvShows";
 //Other components imports
 import {Col, Row, Spinner} from "reactstrap";
 import ItemSlider from "../ItemsSlider";
+import LoadingPage from "../Layout/LoadingPage";
+import {Animated} from "react-animated-css";
 
 const HomePage =
     ({
@@ -40,7 +42,13 @@ const HomePage =
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {trendingList.length ? <ItemSlider children={trendingList} type={'trending'}/> : <Spinner color="danger" />}
+                    {trendingList.length ?
+                        <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                            <ItemSlider children={trendingList} type={'trending'}/>
+                        </Animated>
+                        :
+                        <LoadingPage/>
+                    }
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -50,9 +58,13 @@ const HomePage =
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {popularMovies ?
-                  <ItemSlider children={popularMovies} type={'movies'}/>
-                    : <Spinner color="danger" />}
+                    {
+                        popularMovies ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={popularMovies} type={'movies'}/>
+                            </Animated>
+                        :
+                        <LoadingPage/>}
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -62,9 +74,13 @@ const HomePage =
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {popularTvShows ?
-                    <ItemSlider children={popularTvShows} type={'tvShows'}/>
-                    : <Spinner color="danger" />}
+                    {
+                        popularTvShows ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={popularTvShows} type={'tvShows'}/>
+                            </Animated>
+                             :
+                            <LoadingPage/>}
                 </Col>
             </Row>
         </div>

@@ -4,8 +4,10 @@ import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
 import {getAllMovies} from "../../actions/movies";
 
-import {Col, Row, Spinner} from "reactstrap";
+import {Col, Row } from "reactstrap";
 import ItemSlider from "../ItemsSlider";
+import LoadingPage from "../Layout/LoadingPage";
+import {Animated} from "react-animated-css";
 
 
 const MoviesPage = (
@@ -39,7 +41,14 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {popularMovies.length ? <ItemSlider children={popularMovies} type={'movies'}/> : <Spinner color="danger" />}
+                    {
+                        popularMovies.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={popularMovies} type={'movies'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -49,7 +58,14 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {nowPlayingMovies.length ? <ItemSlider children={nowPlayingMovies} type={'movies'}/> : <Spinner color="danger" />}
+                    {
+                        nowPlayingMovies.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={nowPlayingMovies} type={'movies'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -59,7 +75,14 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {topRatedMovies.length ? <ItemSlider children={topRatedMovies} type={'movies'}/> : <Spinner color="danger" />}
+                    {
+                        topRatedMovies.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={topRatedMovies} type={'movies'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
             <Row className='category-wrapper'>
@@ -69,7 +92,14 @@ const MoviesPage = (
                     </header>
                 </div>
                 <Col className='slider-container'>
-                    {upComingMovies.length ? <ItemSlider children={upComingMovies} type={'movies'}/> : <Spinner color="danger" />}
+                    {
+                        upComingMovies.length ?
+                            <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                                <ItemSlider children={upComingMovies} type={'movies'}/>
+                            </Animated>
+                            :
+                            <LoadingPage/>
+                    }
                 </Col>
             </Row>
         </div>

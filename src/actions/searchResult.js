@@ -11,14 +11,16 @@ export const getSearchResult = (keyword) => dispatch => {
 }
 
 const getSearchMovies = (keyowrd) => async dispatch => {
-    let moviesList = []
+    let moviesList = [];
 
     try {
         const res = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=d00af0decd09caba18f91c6f78bd9936&language=en-US&query=${keyowrd}&page=1`)
 
         const data = res.data;
 
-        for (let key in data['result']){
+        console.log(data)
+
+        for (let key in data['results']){
             let movieItem = {}
 
             movieItem.title = data['results'][key]['title']

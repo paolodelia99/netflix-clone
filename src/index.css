@@ -30,6 +30,10 @@ code {
   text-decoration: none!important;
 }
 
+.netflix-text-color{
+  color: #B9090B!important;
+}
+
 .nav-link-text{
   margin: 10px 15px;
   margin-top: 20px;
@@ -41,7 +45,7 @@ code {
   flex-basis: 55%;
 }
 
-/*SEARCH WRAPPER*/
+/*SEARCH BAR*/
 
 .search-bar-wrapper{
   width: 100%;
@@ -53,6 +57,34 @@ code {
 
 .input-group-custom-wrapper{
   border: black!important;
+}
+
+/*SERCH PAGE*/
+.search-page-big-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.result-big-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.searched-items-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.searched-item{
+    flex-basis: 18%!important;
+    margin: 15px 5px;
 }
 
 /*HOME PAGE*/

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem } from 'reactstrap';
-import {NavLink} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 import SearchBar from "./SearchBar";
 
 const AppNavbar = (props) => {
@@ -11,7 +11,9 @@ const AppNavbar = (props) => {
     return (
         <div>
             <Navbar color="dark" light expand="md">
-                <NavbarBrand href="/" className='custom-nav-bar main-logo'>FetFlix</NavbarBrand>
+                <Link to='/' className='custom-nav-bar main-logo text-decoration-none'>
+                    FetFlix
+                </Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav navbar className='nav-items-container custom-nav-bar' >

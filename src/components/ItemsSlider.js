@@ -19,9 +19,9 @@ class ItemSlider extends Component {
             case 'trending':
                 return children.map(child => <TrendingItem key={child.id} style={{ height: 250 }} trendItem={child}/>);
             case 'movies':
-                return children.map(child => <MovieItem key={child.id} style={{ height: 250 }} movieItem={child}/>);
+                return children.map(child => <MovieItem key={child.id} fromSearchPage={false} style={{ height: 250 }} movieItem={child}/>);
             case 'tvShows':
-                return children.map(child => <TvShowItem key={child.id} style={{ height: 250 }} tvShowItem={child}/>)
+                return children.map(child => <TvShowItem key={child.id} fromSearchPage={false} style={{ height: 250 }} tvShowItem={child}/>)
             default:
                 return children.map(child => <TrendingItem key={child.id} style={{ height: 250 }} trendItem={child}/>);
         }

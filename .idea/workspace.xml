@@ -2,30 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae72b6b1-2b34-410d-a48e-caebcef1afd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actions/searchResult.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SearchPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/reducers/searchResult.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/film-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/film-app.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ItemDetail/MovieDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Layout/LoadingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/movie.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/searchResult.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/searchResult.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/MoviesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/MoviesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DashBoard/TvShowsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DashBoard/TvShowsPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Items/MovieItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/MovieItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Items/TrendingItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/TrendingItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Items/TvShowItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Items/TvShowItem.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ItemsSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemsSlider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Layout/AppNavbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/AppNavbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/SearchBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/SearchBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SearchPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/GKeep" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,6 +56,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\WebstormProjects\film-app\src\resources" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -92,7 +91,8 @@
       <workItem from="1581945623133" duration="30000" />
       <workItem from="1581967924133" duration="8193000" />
       <workItem from="1582011273729" duration="12665000" />
-      <workItem from="1582055884114" duration="7494000" />
+      <workItem from="1582055884114" duration="7795000" />
+      <workItem from="1582097650657" duration="7880000" />
     </task>
     <servers />
   </component>

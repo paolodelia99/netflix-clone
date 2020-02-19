@@ -1,8 +1,10 @@
 import React from 'react';
-import {Col, Row, Spinner} from "reactstrap";
 //Redux
 import {connect} from 'react-redux'
 import PropTypes from 'prop-types'
+import MovieItem from "./Items/MovieItem";
+import TvShowItem from "./Items/TvShowItem";
+import LoadingPage from "./Layout/LoadingPage";
 
 const SearchPage = (
     {
@@ -14,20 +16,50 @@ const SearchPage = (
                 areTvShowsLoading
             }
     }) => {
+
+    const moviesList = searchedMovies.map(movie => (
+        <MovieItem key={movie.id} movieItem={movie} fromSearchPage={true}/>
+    ))
+
+    const tvShowList = searchedTvShows.map(tvShow => (
+        <TvShowItem key={tvShow.id} tvShowItem={tvShow} fromSearchPage={true}/>
+    ))
+
+
     return (
-        <div>
-            <div className='searched-movies-wrapper'>
-
-            </div>
-            <div className="search tv-shows-wrapper">
-
-            </div>
+        <div className='search-page-big-wrapper'>
+            {
+                searchedMovies.length && !areMoviesLoading ?
+                    <div className='result-big-wrapper'>
+                        <div>
+                            <header>
+                                <h3 className='netflix-text-color'>Movies</h3>
+                            </header>
+                        </div>
+                        <div className='searched-items-wrapper'>
+                            {moviesList}
+                        </div>
+                    </div> : null
+            }
+            {
+                searchedTvShows.length && !areTvShowsLoading ?
+                <div className="result-big-wrapper">
+                    <div>
+                        <header>
+                            <h3 className='netflix-text-color'>Tv Shows</h3>
+                        </header>
+                    </div>
+                    <div className="searched-items-wrapper">
+                        {tvShowList}
+                    </div>
+                </div> : null
+            }
         </div>
     );
 };
 
 const mapStateToProps = state => ({
-    searchResult: PropTypes.object.isRequired
+    searchResult: state.searchResult
 })
 
-export default connect(mapStateToProps())(SearchPage);
+export default connect(mapStateToProps)(SearchPage);
