@@ -12,7 +12,7 @@ const AppNavbar = (props) => {
         <div>
             <Navbar color="dark" light expand="md">
                 <Link to='/' className='custom-nav-bar main-logo text-decoration-none'>
-                    FetFlix
+                    Movie App
                 </Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
