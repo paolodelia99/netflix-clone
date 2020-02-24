@@ -8,11 +8,16 @@ export const getTrendings = () => async dispatch => {
         const res = await axios.get('https://api.themoviedb.org/3/trending/all/day?api_key=d00af0decd09caba18f91c6f78bd9936')
 
         const data = res.data;
+        console.log(data)
 
         for(let key in data['results']){
             let trendingItem = {}
 
-            trendingItem.title = data['results'][key]['title']
+            if(data['results'][key].hasOwnProperty('title'))
+                trendingItem.title = data['results'][key]['title']
+            else
+                trendingItem.name = data['results'][key]['name']
+
             trendingItem.id = data['results'][key]['id']
             trendingItem.overview = data['results'][key]['overview']
             trendingItem.popularity = data['results'][key]['popularity']

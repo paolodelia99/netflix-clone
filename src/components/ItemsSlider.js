@@ -64,6 +64,7 @@ class ItemSlider extends Component {
                 rightChevron={'>'}
                 leftChevron={'<'}
                 outsideChevron={false}
+                infiniteLoop={true}
             >
                 {childrenList}
             </ItemsCarousel>
