@@ -318,7 +318,7 @@ code {
   /*HOME PAGE*/
   .category-wrapper{
     padding: 20px;
-    margin: 250px 30px;
+    margin: 30px;
   }
 
   .first-category-wrapper{
@@ -327,6 +327,10 @@ code {
 
   .customs-slider-big-wrapper{
     height: 500px!important;
+  }
+
+  .slider-container{
+    height: 500px;
   }
 
   .custom-item-wrapper{
