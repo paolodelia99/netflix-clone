@@ -43,7 +43,7 @@ const HomePage =
                 </div>
                 <Col className='slider-container'>
                     {trendingList.length ?
-                        <Animated animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
+                        <Animated className="animation-wrapper" animationIn="fadeIn" animationOut="fadeOutDown" animationInDuration={3000} animationOutDuration={1000} isVisible={true}>
                             <ItemSlider children={trendingList} type={'trending'}/>
                         </Animated>
                         :

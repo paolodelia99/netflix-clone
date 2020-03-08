@@ -141,6 +141,10 @@ code {
   justify-content: space-around;
 }
 
+.animation-wrapper{
+  height: 100%;
+}
+
 .category-wrapper{
   padding: 10px;
   margin: 125px 70px;
@@ -279,11 +283,15 @@ code {
   /*HOME PAGE*/
   .category-wrapper{
     padding: 10px;
-    margin: 75px;
+    margin: 25px;
   }
 
   .customs-slider-big-wrapper{
-    height: 350px!important;
+    height: 380px!important;
+  }
+
+  .slider-container{
+    height: 390px;
   }
 
   .slider-wrapper{

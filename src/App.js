@@ -1,6 +1,5 @@
 import React, {Fragment} from 'react';
 import {HashRouter as Routes, Route, Switch} from "react-router-dom";
-import './App.css';
 import AppNavbar from "./components/Layout/AppNavbar";
 import HomePage from "./components/DashBoard/HomePage";
 import MoviesPage from "./components/DashBoard/MoviesPage";
