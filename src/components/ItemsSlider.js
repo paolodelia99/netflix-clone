@@ -61,8 +61,8 @@ class ItemSlider extends Component {
                 activePosition={'center'}
 
                 chevronWidth={24}
-                rightChevron={'>'}
-                leftChevron={'<'}
+                rightChevron={<button className='circle'>{'>'}</button>}
+                leftChevron={<button className='circle'>{'<'}</button>}
                 outsideChevron={false}
                 infiniteLoop={true}
             >

@@ -34,6 +34,10 @@ code {
   color: #B9090B!important;
 }
 
+.custom-nav-item{
+  margin-top: 15px;
+}
+
 .nav-link-text{
   margin: 10px 15px;
   margin-top: 20px;
@@ -175,11 +179,22 @@ code {
 }
 
 .right-chevron-wrapper{
+  background: rgba(0, 0, 0, 0.75);
   width: 100%;
 }
 
 .left-chevron-wrapper{
+  background: rgba(0, 0, 0, 0.75);
   width: 100%;
+}
+
+.circle{
+  background: transparent;
+  color: #B9090B;
+  font-size: 26px;
+  font-weight: bolder;
+  border: none;
+
 }
 
 /*MEDIA QUERIES*/
