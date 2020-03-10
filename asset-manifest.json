@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/netflix-clone/static/css/main.76c3a931.chunk.css",
-    "main.js": "/netflix-clone/static/js/main.7340d50f.chunk.js",
-    "main.js.map": "/netflix-clone/static/js/main.7340d50f.chunk.js.map",
-    "runtime-main.js": "/netflix-clone/static/js/runtime-main.5c8418cf.js",
-    "runtime-main.js.map": "/netflix-clone/static/js/runtime-main.5c8418cf.js.map",
-    "static/css/2.16ec14d9.chunk.css": "/netflix-clone/static/css/2.16ec14d9.chunk.css",
-    "static/js/2.38ded599.chunk.js": "/netflix-clone/static/js/2.38ded599.chunk.js",
-    "static/js/2.38ded599.chunk.js.map": "/netflix-clone/static/js/2.38ded599.chunk.js.map",
-    "index.html": "/netflix-clone/index.html",
-    "precache-manifest.ebe4581073466c9ee4ca7e81d19abbb6.js": "/netflix-clone/precache-manifest.ebe4581073466c9ee4ca7e81d19abbb6.js",
-    "service-worker.js": "/netflix-clone/service-worker.js",
-    "static/css/2.16ec14d9.chunk.css.map": "/netflix-clone/static/css/2.16ec14d9.chunk.css.map",
-    "static/css/main.76c3a931.chunk.css.map": "/netflix-clone/static/css/main.76c3a931.chunk.css.map",
-    "static/js/2.38ded599.chunk.js.LICENSE.txt": "/netflix-clone/static/js/2.38ded599.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/netflix-clone/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/movie.jpg": "/netflix-clone/static/media/movie.49f95281.jpg"
+    "main.css": "./static/css/main.93e749e6.chunk.css",
+    "main.js": "./static/js/main.ae15822f.chunk.js",
+    "main.js.map": "./static/js/main.ae15822f.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.edd5d170.js",
+    "runtime-main.js.map": "./static/js/runtime-main.edd5d170.js.map",
+    "static/css/2.27f6e87d.chunk.css": "./static/css/2.27f6e87d.chunk.css",
+    "static/js/2.dd6a1483.chunk.js": "./static/js/2.dd6a1483.chunk.js",
+    "static/js/2.dd6a1483.chunk.js.map": "./static/js/2.dd6a1483.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.ff2fd08d996d61201352f47d02aa3680.js": "./precache-manifest.ff2fd08d996d61201352f47d02aa3680.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.27f6e87d.chunk.css.map": "./static/css/2.27f6e87d.chunk.css.map",
+    "static/css/main.93e749e6.chunk.css.map": "./static/css/main.93e749e6.chunk.css.map",
+    "static/js/2.dd6a1483.chunk.js.LICENSE.txt": "./static/js/2.dd6a1483.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "./static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/movie.jpg": "./static/media/movie.49f95281.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5c8418cf.js",
-    "static/css/2.16ec14d9.chunk.css",
-    "static/js/2.38ded599.chunk.js",
-    "static/css/main.76c3a931.chunk.css",
-    "static/js/main.7340d50f.chunk.js"
+    "static/js/runtime-main.edd5d170.js",
+    "static/css/2.27f6e87d.chunk.css",
+    "static/js/2.dd6a1483.chunk.js",
+    "static/css/main.93e749e6.chunk.css",
+    "static/js/main.ae15822f.chunk.js"
   ]
 }
