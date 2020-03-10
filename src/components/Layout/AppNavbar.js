@@ -12,7 +12,7 @@ const AppNavbar = (props) => {
         <div>
             <Navbar color="dark" light expand="md">
                 <Link to='/' className='custom-nav-bar main-logo text-decoration-none'>
-                    Movie App
+                    Movie4You
                 </Link>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
